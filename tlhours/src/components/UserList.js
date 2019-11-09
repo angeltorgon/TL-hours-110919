@@ -11,7 +11,6 @@ export default function UserList() {
             .get("https://jsonplaceholder.typicode.com/users")
             .then((res) => {
                 setUsers(res.data)
-                console.log(res.data)
             })
             .catch((error) => {
                 console.log(error)
